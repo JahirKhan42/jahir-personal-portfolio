@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <defs>
+    <radialGradient id="ibGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#4F7CFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#080B12" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151E30"/>
+      <stop offset="100%" stop-color="#0C121E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="360" fill="#0A0E17"/>
+  <rect width="600" height="360" fill="url(#ibGlow)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <path d="M0 60 H600 M0 120 H600 M0 180 H600 M0 240 H600 M0 300 H600 M100 0 V360 M200 0 V360 M300 0 V360 M400 0 V360 M500 0 V360" stroke="#1A2438" stroke-width="1" opacity="0.4"/>
+
+  <!-- Simulated Email Triage Card -->
+  <g transform="translate(100, 50)">
+    <rect width="400" height="260" rx="16" fill="url(#cardGrad)" stroke="#293244" stroke-width="1.5"/>
+    
+    <!-- Header Window Dots -->
+    <circle cx="28" cy="24" r="5" fill="#EF4444" opacity="0.7"/>
+    <circle cx="44" cy="24" r="5" fill="#F59E0B" opacity="0.7"/>
+    <circle cx="60" cy="24" r="5" fill="#10B981" opacity="0.7"/>
+    <rect x="90" y="16" width="160" height="16" rx="4" fill="#1E293B"/>
+
+    <!-- Simulated Inbox Threads -->
+    <g transform="translate(24, 60)">
+      <!-- Item 1 - Active / Highlighted -->
+      <rect width="352" height="48" rx="8" fill="#1E2B45" stroke="#4F7CFF" stroke-width="1.2"/>
+      <circle cx="24" cy="24" r="10" fill="#4F7CFF" fill-opacity="0.2" stroke="#4F7CFF"/>
+      <path d="M20 24 L23 27 L28 21" stroke="#4F7CFF" stroke-width="1.5" stroke-linecap="round"/>
+      <rect x="46" y="16" width="110" height="8" rx="2" fill="#F5F7FB"/>
+      <rect x="46" y="28" width="180" height="6" rx="2" fill="#718096"/>
+      <rect x="290" y="20" width="46" height="12" rx="3" fill="#4F7CFF" fill-opacity="0.3"/>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 58)">
+        <rect width="352" height="42" rx="8" fill="#131B29" stroke="#232D42" stroke-width="1"/>
+        <circle cx="24" cy="21" r="10" fill="#232D42"/>
+        <rect x="46" y="13" width="90" height="7" rx="2" fill="#CBD5E1"/>
+        <rect x="46" y="24" width="150" height="5" rx="2" fill="#475569"/>
+        <rect x="300" y="16" width="36" height="10" rx="2" fill="#232D42"/>
+      </g>
+
+      <!-- Item 3 - Draft Prepared Copilot Banner -->
+      <g transform="translate(0, 110)">
+        <rect width="352" height="58" rx="8" fill="#181938" stroke="#9061F9" stroke-width="1.2" stroke-dasharray="4 3"/>
+        <path d="M20 18 L34 26 L20 34 Z" fill="#9061F9" opacity="0.8"/>
+        <text x="44" y="28" fill="#E9D5FF" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">INBOXPILOT • DRAFT REPLY READY</text>
+        <rect x="44" y="36" width="220" height="6" rx="2" fill="#9061F9" fill-opacity="0.4"/>
+        <rect x="278" y="23" width="60" height="20" rx="5" fill="#4F7CFF"/>
+        <text x="308" y="37" text-anchor="middle" fill="#FFFFFF" font-family="'Inter', sans-serif" font-size="10" font-weight="600">Review</text>
+      </g>
+    </g>
+  </g>
+</svg>
